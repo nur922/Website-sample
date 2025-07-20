@@ -1,0 +1,234 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden
+}
+header{
+    background-image: linear-gradient( to top,
+    rgba(0,0,0,0.8) 0%,
+    rgba(0,0,0,0.3) 60%,
+    rgba(0,0,0,0.8) 100%), url(img/background.jpg)
+    ;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 15px;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.logo img{
+width: 150px;
+height: 80px;
+
+}
+.navselect select{
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid red;
+    margin-right: 30px;
+    color: white;
+    padding: 5px;
+}
+.navselect option{
+    background-color: black;
+    color: white;
+}
+.button1{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.main{
+    
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+}
+.metinler h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.metinler h2{
+    font-size:25px ;
+    padding-bottom: 20px;
+}
+.metinler p{
+    font-size: 15px;
+    font-size: bold;
+}
+.oturum input{
+    background-color: aliceblue;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    padding-left: 10px;
+}
+.oturum button{
+    background-color: red;
+    width: 80px;
+    height:30px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.eklenti{
+    display: flex;
+align-items: center;
+text-align: center;
+padding: 50px 50px;
+}
+.feature-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+    gap: 40px;
+}
+
+.feature-1 h1{
+    font-size: 40px;
+margin-bottom: 10px;
+margin-left: 20px;
+
+}
+.feature-1 p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.img1{
+    position: relative;
+    
+}
+.img1 img{
+    
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.img1 video{
+    position: absolute;
+    width: 73%;
+    left: 13%;
+    top:20%;
+    z-index: 0;
+}
+.eklenti:nth-child(3) .img1 video{
+  width: 63%;
+  top:10%;
+  left: 19%;
+}
+
+.soru{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 40px;
+
+}
+.linkler{
+   
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 0px;
+    
+}
+.gruplar{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 15px;
+    gap:15px;
+}
+footer{
+    margin-top: 10px;
+    padding: 50px 0;
+    border-top: 5px solid darkgray;
+margin: 30px 50px;
+}
+footer a{
+    color: darkgrey;
+    font-size: 16px;
+    text-decoration: none;
+}
+.soru{
+    color: darkgray;
+}
+.son select{
+    background-color: transparent;
+    color: gray;
+   padding: 10px;
+   margin-left: 20px;
+   cursor: pointer;
+   font-size: 15px;
+}
+.son option{
+    background-color: darkgray;
+    color: black;
+    
+}
+.footer-country{
+    margin-left: 23px;
+    margin-top: 10px;
+    color: darkgray;
+    font-size: 10px;
+}
+@media (max-width:600px){
+ .feature-1{
+    flex-direction: column;
+ }
+ .eklenti{
+    flex-direction: column;
+ }
+ .oturum button{
+    margin-top: 10px;
+ }
+ .oturum input{
+    width: 250px;
+ }
+ footer a{
+   font-size: 12px;
+ }
+ .son select{
+    font-size: 12px;
+    padding: 5px;
+ }
+ .feature-1 h1{
+    font-size: 25px;
+  }
+  .feature-1 p{
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .feature-1 h1{
+    font-size: 30px;
+  }
+  .feature-1 p{
+    font-size: 15px;
+  }
+}
